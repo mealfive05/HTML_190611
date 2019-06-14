@@ -26,8 +26,79 @@
 </head>
 
 <body>
-   
-    
+    <form>
+        <div>
+            <label for="input_name">姓名:</label>
+            <input type="text" id="input_name">
+        </div>
+        <div>
+            <label for="input_phone">電話:</label>
+            <input type="text" id="input_phone">
+        </div>
+        <div>
+            <label for="">性別:</label>
+
+            <input type="radio" id="male" name="gender">
+            <label for="male">男生</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">女生</label>
+        </div>
+        <div>
+            <label for="input_birth_date">出生日期:</label>
+            <input type="date" id="input_birth_date">
+        </div>
+        <div>
+            <label for="input_birth_time">出生時間:</label>
+            <input type="time" id="input_birth_time">
+        </div>
+
+
+        <div>
+            <label for="">使用過那些軟體(多選)</label>
+
+            <input type="checkbox" name="word">
+            <label for="word">word</label>
+
+            <input type="checkbox" name="php">
+            <label for="php">php</label>
+        </div>
+
+        <div>
+            <label for="input_email">信箱:</label>
+            <input type="text" id="input_email">
+        </div>
+<div>
+    <label for="input_color">最喜歡的顏色:</label>
+    <input type="color">
+</div>
+
+        <div>
+<label for="height">身高(tag):</label>
+<input type="range" id="height" min="140" max="200" step="1" oninput="outputUpdate(value)">
+<output id="result">顯示數字的地方</output> 
+
+        </div>
+        <div>
+            <label for="food">食物:</label>
+            <select id="food" name="foodlist">
+                <optgroup label="日式"></option>
+                    　<option value="nood">拉麵</option>
+                    　<option value="fire">燒烤</option>
+                    　<option value="onu">烏龍麵</option>
+                    　<optgroup label="台式"></option>
+                        <option value="fast">快炒</option>
+                        <option value="rice">粥</option>
+                    　
+            </select>
+        </div>
+        <input type="submit" value="送出通訊錄">
+    </form>
+<script>
+function outputUpdate(vol){
+    document.getElementById("result").value=vol;
+}
+</script>
 </body>
 
 </html>
@@ -42,5 +113,3 @@
 <!--1.9. 試試看，加入送出按鈕 (submit) -->
 <!--1.10. 試試看，加入居住地 <select> <option> -->
 <!--1.11. 試試看，按下按鈕網址列會有什麼改變? -->
-
-

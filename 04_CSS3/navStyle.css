@@ -18,3 +18,24 @@
         text-align: center;
         text-decoration: none;
     }
+
+    a{
+        text-decoration: none;
+    }
+/* (link) 設定超連結未連結時的顏色 */
+    a:link{
+        color:chocolate
+    }
+/* (visited) 設定超連結已連結過的顏色 */
+    a:visited{
+        color:green;
+    }
+/* (hover) 設定滑鼠移至連結上方時的顏色 */
+    a:hover{
+        color:rgb(81, 64, 109);
+        
+    }
+/* (active) 設定超連結點選連結當下的顏色 */
+    a:active{
+        color:yellow;
+    }

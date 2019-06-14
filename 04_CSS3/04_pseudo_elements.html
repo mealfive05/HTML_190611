@@ -8,10 +8,48 @@
 
     <style>
         /* 1. 設定 table 的 border，2px solid red */
+        table{
+            border:2px solid red;
+            border-collapse: separate;
+            border-spacing: 1em;
+            
+        }
         /* 2. 設定 td 的 border，2px dotted orange */
+        td{
+            border :2px dotted orange;
+            border-width: 0px 2px;
+            border-right: 0;
+            
+        }
+        tr{
+            display: block;
+            border-bottom : 2px dashed blue;
+        }
+        tr:last-child { 
+            border: 0;
+        }
+        td:last-child { 
+            border-right: 0;
+        }
+        td:first,td+td{
+            border-left: 0;
+        }
+        tr:not(:first-child){
+            background-color: aqua;
+        }
+        tr:nth-child(4){
+            background-color: blueviolet;
+        }
+        tr:first-child { 
+            border 0;
+        }
+
         /* 3. 到w3c網頁，查詢border-collapse & border-spacing 這個屬性的用法，並且設定在table裡面試試看 */
+        
         /* 4. 設定 border-collapse: collapse; 時，border-spacing是否有設定成功? */
+        
         /* 5. 設定 tr 的 border，只要底線，設定為2px dashed blue */
+        
         /* 6. 若 tr 的 border設定不成功，試試看加上display: block; */
         /* 7. 設定 td border-width: 0px 2px; 以及 border-width: 2px 0px; 觀察畫面變化 */
         /* 8. 移除最後一個tr的底線 */
